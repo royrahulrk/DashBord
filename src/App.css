@@ -1,38 +1,333 @@
-.App {
-  text-align: center;
+.app{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+body{
+    background: #eaedf7;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65px;
+    padding: 4px 20px 4px 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.10);
+    background-color: #ffff;
+    padding: 1rem;
+    z-index: 9999;
+    /* width: 100%; */
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+.sidemenupage{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.header-left{
+    display: flex;
+   
+    justify-content: space-around;
+    align-items: center;
+}
+.header-right{
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    gap: 4rem !important;
+}
+.content{
+    padding-left: 12px;
+}
+.sidemenu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #25233c;
+    color: #f0f0ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.sidemenu li{
+    width: 8rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card-space{
+    gap: 4rem !important;
+}
+.ant-card-head-title{
+    font-weight: 800 !important;
+    color: #1d212f;
+}
+.ant-card-body{
+    padding: 12px !important;
+}
+.card-icon{
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 21px;
+    background: #edebff;
+    color: #6259ca;
+    height: 40px;
+    width: 40px;
+}
+.card-num{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card-num2{
+    font-size: 1rem;
+    color: #8f8fb1 
+}
+.graph-sec{
+    gap: 2rem !important;
+}
+.card-header label{
+    color: #1d212f;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: .2px;
+    font-size: 16px;
+
+}
+.secondary{
+    font-size:12px;
+    color:#8f8fb1
+}
+.ant-list-item-meta-avatar{
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #e8e6f7;
+    line-height: 37px;
+    font-size: 17px;
+    color: #6259ca;
+
+}
+.list-img{
+    width: 44px;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-img{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+svg {
+    display: inline-block;
+    vertical-align: middle;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* path {
+    fill: #2a354d;
+  } */
+  .country-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .card-header h4{
+    color: #1d212f;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 10px;
+    letter-spacing: .2px;
+    font-size: 14px;
   }
+  .country-sale{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+  }
+  .text-muted{
+    color: #8f8fb1;
+    display: flex;
+    align-items: center;
+  }
+  .tx-15{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+
+  }
+  .tx-11{
+    color: #8f8fb1;
+    font-size: 11px;
+  }
+  .ant-table-cell{
+    color: #3c4858 !important;
+    font-weight: 500 !important;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+  }
+  .badge{
+    
+    background-color: #6259ca;
+    border-radius: 3px;
+    color: white;
+    line-height: 1;
+    padding: 4px 6px 5px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  .op-5 {
+    opacity: 0.5;
 }
+.sidebar-body h5{
+    font-size: 14px;
+    border-bottom: 1px solid #f0f2f8;
+    background: #f0f0ff;
+    font-weight: 500;
+    line-height: 3.2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 1rem;
+}
+.ant-drawer-content-wrapper .ant-drawer-body{
+        padding: 0px !important;
+
+}
+.d1-flex {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+ .custom-drawer {
+
+    background: #001529 !important;
+
+}
+.alignLeftOutlined{
+       display: none;
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup.ant-menu.ant-menu-light.css-dev-only-do-not-override-14wwjjs.ant-menu-submenu-placement-bottomLeft {
+    top: 5rem !important;
+}
+.search-drop{
+    display: none !important;
+}
+.ant-table-content{
+    overflow-x: auto;
+}
+.moreOutlined {
+    display: none;
+}
+
+
+@media (max-width: 990px) {
+    .inputSearch {
+      display: none;
+    }
+    .navbar{
+        display: none;
+      }
+      .search-drop{
+        display: block !important;
+      }
+      .alignLeftOutlined{
+        display: block !important;
+      }
+      .country-sale-d{
+        
+         flex-flow: column !important;
+      }
+  }
+  @media (max-width: 540px) {
+      .header-right{
+        display: none;
+      }
+
+      .moreOutlined {
+        display: block;
+    }
+    .header-left {
+        width: 100%;
+    }
+    
+.ant-row.ant-row-center.css-dev-only-do-not-override-14wwjjs {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.country-sale {
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+.country-block {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.welcome{
+   padding-left: 1rem;
+   padding-right: 1rem;
+}
+  }
+  @media (min-width:768px) and ( max-width: 912px) {
+
+    .welcome{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 1rem;
+     }
+     .header {
+        width: 100%;
+        box-sizing: border-box;
+     }
+     .header-left {
+        width: 30%;
+     }
+     .header-right {
+        width: 70%;
+        justify-content: space-around;
+        gap: 0px !important;
+     }
+     .card-section-top{
+        padding-right: 2rem;
+        padding-left: 2rem;
+     }
+     .ant-row.ant-row-center.css-dev-only-do-not-override-14wwjjs {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+  }
