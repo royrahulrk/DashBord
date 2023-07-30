@@ -10,8 +10,8 @@ const FooterSection = () => {
         <div className="row row-sm">
           <div className="col-md-12">
             <span>
-              Copyright © 2021 <a href="#">Spruha</a>. Designed by{' '}
-              <a href="https://www.spruko.com/">Spruko</a> All rights reserved.
+              Copyright © 2021 <a href="https://www.google.com/">Spruha</a>. Designed by{' '}
+              <a href="hhttps://www.google.com/">Spruko</a> All rights reserved.
             </span>
           </div>
         </div>
