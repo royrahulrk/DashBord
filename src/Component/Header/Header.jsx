@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <>
-    <div className='header'>
+    <div className='header' style={{zIndex:"1"}}>
        
       <Space className='header-left'>
        <Space className='alignLeftOutlined'>
